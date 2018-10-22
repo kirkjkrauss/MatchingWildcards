@@ -22,6 +22,14 @@ bool FastWildComparePortable(char *strWild, char *strTame)
 		{
 			if (strWild[iWild])
 			{
+				while (strWild[iWild++] == '*')
+				{
+					if (!strWild[iWild])
+					{
+						return true;   // "ab" matches "ab*".
+					}
+				}
+
 			    return false;          // "abcd" doesn't match "abc".
 			}
 			else

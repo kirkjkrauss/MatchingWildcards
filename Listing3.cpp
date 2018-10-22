@@ -40,6 +40,9 @@ int testwild(void)
 
     while (nReps--)
     {
+		// Case with first wildcard after total match.
+        bAllPassed &= test("Hi", "Hi*", true);
+
 		// Case with mismatch after '*'
         bAllPassed &= test("abc", "ab*d", false);
 

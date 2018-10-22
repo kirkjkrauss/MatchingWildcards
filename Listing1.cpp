@@ -16,6 +16,14 @@ bool FastWildCompare(char *pWild, char *pTame)
 		{
 			if (*pWild)
 			{
+				while (*(pWild++) == '*')
+				{
+					if (!(*pWild))
+					{
+						return true;   // "ab" matches "ab*".
+					}
+				}
+
 			    return false;          // "abcd" doesn't match "abc".
 			}
 			else
