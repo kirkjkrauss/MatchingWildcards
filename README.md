@@ -2,7 +2,7 @@
 
 <br /><b>Matching Wildcards: An Improved Algorithm for Big Data</b><br />
 This is a new algorithm for matching wildcards.  It has been tested for reliability and performance.  In many commonly occurring situations it outperforms all prior algorithms that have been compared, to my knowledge.  Graphical comparative performance findings appear at this link, along with a description of the algorithmic design strategy:<br />
-http://www.developforperformance.com/MatchingWildcards_AnImprovedAlgorithmForBigData.html<br />
+https://developforperformance.com/MatchingWildcards_AnImprovedAlgorithmForBigData.html<br />
 <br />
 <b>Code listings</b><br />
 Listing1.cpp - a pointer-based implementation, named FastWildCompare();<br />
